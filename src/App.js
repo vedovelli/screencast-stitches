@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { Container, ButtonBar } from "./design/containers";
+import { Button } from "./design/components";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App">
+      <h1>Stitches is 🔥</h1>
+      <ButtonBar>
+        <Button>Button Label</Button>
+        <Button color="red" css={{ backgroundColor: "lightblue" }}>
+          Button Label
+        </Button>
+        <Button color="red">Button Label</Button>
+        <Button color="green">Button Label</Button>
+      </ButtonBar>
+    </Container>
   );
 }
 
